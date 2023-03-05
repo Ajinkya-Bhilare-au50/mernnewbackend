@@ -14,7 +14,11 @@ app.use("/api/users", userRoutes);
 console.log(process.env.PORT);
 console.log(process.env.NODE_ENV);
 app.get("/", (req, res) => {
-  res.send("API is running");
+  res.send(`API is running 
+  please check below routes:
+  https://deploymern.onrender.com/api/products
+  https://deploymern.onrender.com/api/products/63ff8aeaeb802952bf501468P
+  login and Authentication routes are verified using postman`);
 });
 app.use("/api/products", productRoutes);
 app.use(notFound);
